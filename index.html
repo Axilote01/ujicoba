@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Danu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" href="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Profil</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#experience">Pengalaman Kerja</a>
+        <a href="#skills">Keterampilan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="text-container">
+                <h1>Halo, Perkenalkan Saya</h1>
+                <h2>Danu Miharja</h2>
+                <p>Saya seorang pengembang web yang cukup berpengalaman dalam membangun aplikasi web modern dengan berbagai teknologi. Saya memiliki minat yang kuat dalam pengembangan software dan senang belajar hal-hal baru yang berkaitan dengan teknologi.</p>
+            </div>
+            <div class="image-container">
+                <img src="Danu Image.jpg" alt="Danu Miharja" class="profile-photo">
+            </div>
+        </div>
+    </section>
+<main>
+        <section id="profile" class="section">
+            <h2>Profil</h2>
+            <p>Saya Danu Miharja, memiliki latar belakang pendidikan yang kuat dalam Ilmu Komputer dan pengalaman profesional yang luas dalam pengembangan web. Meskipun pengalaman kerja saya dihotel itu adalah itu adalah bukti saya senang tantangan baru dan selalu berusaha memberikan hasil terbaik dalam setiap proyek yang saya tangani.</p>
+        </section>
+        
+        <section id="education" class="section">
+            <h3>Pendidikan</h3>
+            <ul>
+                <li><i class="fas fa-school"></i><strong> SMK Rosma</strong>, Teknik Komputer Jaringan - 2022 - 2025</li>
+                <li><i class="fas fa-school"></i><strong> SMPN 2 Karawang Timur</strong>, - 2020 - 2022</li>
+            </ul>
+        </section>
+        
+        <section id="experience" class="section">
+            <h3>Pengalaman Kerja</h3>
+            <ul>
+                <li><i class="fas fa-briefcase"></i><strong> Front Office</strong>, Hotel Resinda Karawang - 2023 - 2024</li>
+            </ul>
+        </section>
+        
+        <section id="skills" class="section">
+            <h3>Keterampilan</h3>
+            <div class="skills-container">
+                <div class="skill-title"><i class="fab fa-html5"></i>HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 52%;">
+                        <span>52%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-title"><i class="fab fa-css3-alt"></i>CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 35%;">
+                        <span>35%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-title"><i class="fab fa-js"></i>JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 15%;">
+                        <span>15%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h3>Kontak</h3>
+            <p><i class="fas fa-envelope"></i> Email: danumiharja2020@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Telepon: +62 8571 9504 079</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Hak Cipta &copy; 2024 Danu</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
